@@ -17,21 +17,34 @@ const fade = {
 
 function Ticker() {
   const { t } = useLanguage();
+  const items = [
+    t('tickerAiAssisted'),
+    t('tickerNsqf'),
+    t('tickerRegional'),
+    t('tickerOffline'),
+    t('tickerHumanLoop')
+  ];
+
   return (
-    <div className="bg-accent text-charcoal font-display font-bold text-lg py-3 overflow-hidden whitespace-nowrap border-y-2 border-charcoal flex items-center relative">
+    <div className="bg-accent text-charcoal font-display font-bold text-sm sm:text-base py-3 overflow-hidden whitespace-nowrap border-y-2 border-charcoal flex items-center relative">
       <motion.div
-        className="flex gap-4 min-w-max"
+        className="flex gap-6 min-w-max"
         animate={{ x: ['0%', '-50%'] }}
         transition={{ repeat: Infinity, duration: 25, ease: 'linear' }}
       >
-        {Array.from({ length: 10 }).map((_, i) => (
-          <span key={i} className="flex items-center gap-4">
-            <span>{t('tickerAiAssisted')}</span><span className="text-xl">✦</span>
-            <span>{t('tickerNsqf')}</span><span className="text-xl">✦</span>
-            <span>{t('tickerRegional')}</span><span className="text-xl">✦</span>
-            <span>{t('tickerOffline')}</span><span className="text-xl">✦</span>
-            <span>{t('tickerHumanLoop')}</span><span className="text-xl">✦</span>
-          </span>
+        {[0, 1].map((setIndex) => (
+          <div key={setIndex} className="flex gap-6 items-center">
+            {Array.from({ length: 4 }).map((_, repeatIdx) => (
+              <span key={repeatIdx} className="flex items-center gap-6">
+                {items.map((item, idx) => (
+                  <span key={idx} className="flex items-center gap-6">
+                    <span>{item}</span>
+                    <span className="text-sm opacity-60">✦</span>
+                  </span>
+                ))}
+              </span>
+            ))}
+          </div>
         ))}
       </motion.div>
     </div>
@@ -40,20 +53,20 @@ function Ticker() {
 
 function Orbital3D() {
   return (
-    <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-[500px] h-[500px] [perspective:1000px] pointer-events-none hidden lg:flex items-center justify-center z-0 opacity-80">
+    <div className="relative w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[360px] md:h-[360px] lg:w-[420px] lg:h-[420px] [perspective:1000px] pointer-events-none flex items-center justify-center z-0 opacity-90 mx-auto">
       <motion.div 
         animate={{ rotateY: [0, 360], rotateX: [0, 360] }}
-        transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
         className="w-full h-full [transform-style:preserve-3d] relative flex items-center justify-center"
       >
-        <div className="absolute w-64 h-64 bg-white/10 rounded-full blur-3xl shadow-[0_0_100px_var(--color-primary-light)]" />
+        <div className="absolute w-44 h-44 sm:w-56 sm:h-56 bg-white/10 rounded-full blur-2xl shadow-[0_0_80px_var(--color-primary-light)]" />
         <div className="absolute w-full h-full border-[2px] border-accent/40 rounded-full" style={{ transform: 'rotateX(75deg)' }} />
-        <div className="absolute w-full h-full border-[2px] border-white/20 rounded-full" style={{ transform: 'rotateX(75deg) rotateY(60deg)' }} />
-        <div className="absolute w-full h-full border-[2px] border-primary-light/40 rounded-full" style={{ transform: 'rotateX(75deg) rotateY(120deg)' }} />
+        <div className="absolute w-full h-full border-[2px] border-white/25 rounded-full" style={{ transform: 'rotateX(75deg) rotateY(60deg)' }} />
+        <div className="absolute w-full h-full border-[2px] border-primary-light/50 rounded-full" style={{ transform: 'rotateX(75deg) rotateY(120deg)' }} />
         <motion.div 
-          animate={{ scale: [1, 1.3, 1] }} 
+          animate={{ scale: [1, 1.25, 1] }} 
           transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-          className="w-12 h-12 bg-accent rounded-full shadow-[0_0_40px_var(--color-accent)] z-10" 
+          className="w-10 h-10 sm:w-12 sm:h-12 bg-accent rounded-full shadow-[0_0_35px_var(--color-accent)] z-10" 
         />
       </motion.div>
     </div>
@@ -62,11 +75,10 @@ function Orbital3D() {
 
 function FloatingShapes() {
   const shapes = [
-    { type: 'circle', color: 'bg-cyan-500', size: 'w-12 h-12', pos: 'top-20 left-[10%]', delay: 0 },
-    { type: 'square', color: 'bg-purple-500', size: 'w-10 h-10', pos: 'top-40 right-[15%]', delay: 1 },
-    { type: 'cross', color: 'text-pink-500', size: 'text-5xl', pos: 'bottom-32 left-[20%]', delay: 2 },
-    { type: 'plus', color: 'text-yellow-400', size: 'text-6xl', pos: 'top-32 left-[40%]', delay: 1.5 },
-    { type: 'circle', color: 'border-4 border-green-400 bg-transparent', size: 'w-16 h-16', pos: 'bottom-20 right-[35%]', delay: 0.5 },
+    { type: 'circle', color: 'bg-cyan-400/25', size: 'w-10 h-10', pos: 'top-16 left-6', delay: 0 },
+    { type: 'square', color: 'bg-purple-400/25', size: 'w-8 h-8', pos: 'top-20 right-12', delay: 1 },
+    { type: 'cross', color: 'text-pink-400/25', size: 'text-4xl', pos: 'bottom-16 left-12', delay: 2 },
+    { type: 'circle', color: 'border-2 border-emerald-400/30 bg-transparent', size: 'w-14 h-14', pos: 'bottom-12 right-16', delay: 0.5 },
   ];
 
   return (
@@ -74,22 +86,21 @@ function FloatingShapes() {
       {shapes.map((s, i) => (
         <motion.div
           key={i}
-          className={`absolute ${s.pos} flex items-center justify-center opacity-40`}
+          className={`absolute ${s.pos} flex items-center justify-center`}
           animate={{
-            y: [0, -40, 0],
+            y: [0, -20, 0],
             rotate: s.type === 'circle' ? 0 : [0, 90, 180, 360],
           }}
           transition={{
-            duration: 6,
+            duration: 8,
             repeat: Infinity,
             ease: 'easeInOut',
             delay: s.delay,
           }}
         >
-          {s.type === 'circle' && <div className={`${s.size} ${s.color} rounded-full blur-[2px]`} />}
-          {s.type === 'square' && <div className={`${s.size} ${s.color} blur-[2px]`} />}
-          {s.type === 'cross' && <div className={`${s.size} ${s.color} font-mono rotate-45 blur-[1px] leading-none`}>+</div>}
-          {s.type === 'plus' && <div className={`${s.size} ${s.color} font-mono blur-[1px] leading-none`}>+</div>}
+          {s.type === 'circle' && <div className={`${s.size} ${s.color} rounded-full blur-[1px]`} />}
+          {s.type === 'square' && <div className={`${s.size} ${s.color} rounded-lg blur-[1px]`} />}
+          {s.type === 'cross' && <div className={`${s.size} ${s.color} font-mono rotate-45 select-none leading-none`}>+</div>}
         </motion.div>
       ))}
     </div>
@@ -103,18 +114,16 @@ export default function Landing() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-      {isPortfolio && <FloatingShapes />}
-      
       {/* ════════ HERO ════════ */}
       <section className={`pt-36 pb-16 md:pt-44 md:pb-24 px-4 sm:px-6 relative overflow-hidden ${isPortfolio ? 'bg-[#3047E8] text-white' : 'bg-pageBg text-textPrimary'}`}>
-        {isPortfolio && <Orbital3D />}
+        {isPortfolio && <FloatingShapes />}
         {isPortfolio && (
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 -rotate-90 origin-left hidden md:block">
-            <span className="font-mono text-xs tracking-widest text-white/60">{t('makeItClear')}</span>
+          <div className="absolute left-4 top-1/2 -translate-y-1/2 -rotate-90 origin-left hidden xl:block pointer-events-none select-none z-10">
+            <span className="font-mono text-xs tracking-widest text-white/50">{t('makeItClear')}</span>
           </div>
         )}
-        <div className={`max-w-6xl mx-auto relative z-10 ${isPortfolio ? 'flex flex-col md:flex-row items-center justify-between text-left' : 'text-center'}`}>
-          <div className={isPortfolio ? 'md:w-1/2' : ''}>
+        <div className={`max-w-6xl mx-auto relative z-10 ${isPortfolio ? 'flex flex-col md:flex-row items-center justify-between text-left gap-8 md:gap-12' : 'text-center'}`}>
+          <div className={isPortfolio ? 'w-full md:w-1/2' : ''}>
             <motion.div {...fade}>
               <span className={`inline-flex items-center gap-2 ${isPortfolio ? 'bg-accent/20 text-accent border-accent/40' : 'bg-teal/10 text-teal-dark border-teal/20'} text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border`}>
                 <Award size={14} /> {t('govtInitiative')}
@@ -154,9 +163,13 @@ export default function Landing() {
           </div>
           
           {isPortfolio && (
-            <div className="md:w-1/2 relative mt-16 md:mt-0 flex justify-center">
-              <Orbital3D />
-              <div className="absolute top-0 right-0 font-mono text-xs text-accent">{t('buildShapeShip')}</div>
+            <div className="w-full md:w-1/2 relative mt-8 md:mt-0 flex flex-col items-center justify-center">
+              <div className="relative">
+                <Orbital3D />
+                <div className="absolute -top-3 right-2 font-mono text-[11px] text-accent bg-[#0a0b12]/80 px-2.5 py-1 rounded-full border border-accent/30 shadow-md">
+                  {t('buildShapeShip')}
+                </div>
+              </div>
             </div>
           )}
         </div>

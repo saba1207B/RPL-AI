@@ -35,11 +35,11 @@ export default function Navbar() {
   let navClasses = 'bg-navy text-white';
   if (isPortfolio) {
     if (isHome) {
-      navClasses = scrolled ? 'bg-[#3047E8]/90 backdrop-blur-md text-white' : 'bg-transparent text-white';
+      navClasses = scrolled ? 'bg-[#3047E8]/95 backdrop-blur-md text-white shadow-md' : 'bg-[#3047E8] text-white';
     } else if (isAssessor) {
-      navClasses = scrolled ? 'bg-charcoal/90 backdrop-blur-md text-white' : 'bg-charcoal text-white';
+      navClasses = scrolled ? 'bg-charcoal/95 backdrop-blur-md text-white shadow-md' : 'bg-charcoal text-white';
     } else {
-      navClasses = scrolled ? 'bg-pageBg/90 backdrop-blur-md text-charcoal' : 'bg-transparent text-charcoal';
+      navClasses = scrolled ? 'bg-white/95 backdrop-blur-md text-charcoal shadow-sm' : 'bg-white text-charcoal border-b border-borderClr';
     }
   }
 
