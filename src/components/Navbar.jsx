@@ -140,7 +140,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className={`fixed inset-0 z-40 ${isPortfolio ? 'bg-charcoal text-white' : 'bg-navy text-white'} pt-32 px-6 md:hidden`}
+            className={`fixed inset-0 z-40 ${isPortfolio ? 'bg-charcoal text-white' : 'bg-navy text-white'} pt-32 pb-12 px-6 md:hidden overflow-y-auto`}
           >
             <nav className="flex flex-col gap-4">
               {links.map((l) => (

@@ -122,13 +122,13 @@ export default function Landing() {
             </motion.div>
 
             {isPortfolio ? (
-              <motion.h1 {...fade} className="text-5xl sm:text-6xl md:text-7xl font-display font-bold leading-tight mb-5 text-white tracking-tight">
+              <motion.h1 {...fade} className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-5 text-white tracking-tight break-words">
                 {t('portfolioHeroH1_1')}<br/>
                 <span className="text-accent">{t('portfolioHeroH1_2')}</span>{t('portfolioHeroH1_3')}<br/>
                 {t('portfolioHeroH1_4')}
               </motion.h1>
             ) : (
-              <motion.h1 {...fade} className="text-4xl sm:text-5xl md:text-6xl font-display font-bold leading-tight mb-5 text-navy">
+              <motion.h1 {...fade} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-5 text-navy break-words">
                 {t('heroTitle')}
               </motion.h1>
             )}

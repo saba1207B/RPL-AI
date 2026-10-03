@@ -86,7 +86,7 @@ export default function CandidateDashboard() {
                 </div>
                 <p className="text-[11px] text-textMuted">{t('assessorReviewing')}</p>
               </div>
-              <button className="px-4 py-2.5 border border-borderClr rounded-xl text-sm font-semibold hover:bg-gray-50 flex items-center gap-1 shrink-0">
+              <button className="w-full sm:w-auto px-4 py-2.5 border border-borderClr rounded-xl text-sm font-semibold hover:bg-gray-50 flex items-center justify-center gap-1 shrink-0">
                 {t('details')} <ChevronRight size={16} />
               </button>
             </div>
@@ -107,7 +107,7 @@ export default function CandidateDashboard() {
                   {t('needClearerVideo')}
                 </p>
               </div>
-              <button className="px-4 py-2.5 bg-navy text-white rounded-xl text-sm font-semibold hover:bg-navy-dark shrink-0">
+              <button className="w-full sm:w-auto px-4 py-2.5 bg-navy text-white rounded-xl text-sm font-semibold hover:bg-navy-dark shrink-0 flex items-center justify-center">
                 {t('uploadNow')}
               </button>
             </div>
@@ -125,7 +125,7 @@ export default function CandidateDashboard() {
                 </div>
                 <p className="text-xs text-textMuted">{t('nsqfLevel')} 2 · Oct 2023</p>
               </div>
-              <button className={`${isPortfolio ? 'text-[#3047E8]' : 'text-teal'} font-semibold text-sm hover:underline shrink-0`}>
+              <button className={`w-full sm:w-auto py-1 ${isPortfolio ? 'text-[#3047E8]' : 'text-teal'} font-semibold text-sm hover:underline shrink-0 text-left sm:text-right`}>
                 {t('downloadPdf')}
               </button>
             </div>

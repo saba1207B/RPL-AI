@@ -44,6 +44,7 @@ function ScoreButtons() {
 export default function AssessorDashboard() {
   const [selId, setSelId] = useState(1);
   const [expanded, setExpanded] = useState(1);
+  const [mobileTab, setMobileTab] = useState('eval'); // 'list' | 'eval'
   const { t } = useLanguage();
   const candidate = CANDIDATES.find((c) => c.id === selId);
 
@@ -51,8 +52,37 @@ export default function AssessorDashboard() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
       className="bg-charcoal text-white min-h-screen pt-28 sm:pt-32 flex flex-col md:flex-row h-screen overflow-hidden font-body"
     >
+      {/* Mobile Tab Switcher (visible only on mobile) */}
+      <div className="md:hidden flex border-b border-white/10 bg-[#161616] p-2 gap-2 shrink-0">
+        <button
+          onClick={() => setMobileTab('list')}
+          className={clsx(
+            'flex-1 py-2 px-3 text-xs font-mono font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5',
+            mobileTab === 'list'
+              ? 'bg-white/15 text-white border border-white/20'
+              : 'text-white/60 hover:text-white bg-transparent'
+          )}
+        >
+          <span>👥 Candidates ({CANDIDATES.length})</span>
+        </button>
+        <button
+          onClick={() => setMobileTab('eval')}
+          className={clsx(
+            'flex-1 py-2 px-3 text-xs font-mono font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5',
+            mobileTab === 'eval'
+              ? 'bg-accent text-dark font-black shadow-sm'
+              : 'text-white/60 hover:text-white bg-transparent'
+          )}
+        >
+          <span>📋 {candidate ? candidate.name : 'Evaluation'}</span>
+        </button>
+      </div>
+
       {/* ═══ Left Panel ═══ */}
-      <div className="w-full md:w-80 lg:w-96 bg-[#121212] border-r border-white/10 flex flex-col shrink-0">
+      <div className={clsx(
+        "w-full md:w-80 lg:w-96 bg-[#121212] border-r border-white/10 flex flex-col shrink-0",
+        mobileTab !== 'list' && 'hidden md:flex'
+      )}>
         <div className="p-4 border-b border-white/10">
           <h2 className="font-bold text-white text-lg mb-3">{t('pendingReview')}</h2>
           <div className="relative">
@@ -67,7 +97,7 @@ export default function AssessorDashboard() {
           {CANDIDATES.map((c) => {
             const Icon = c.icon;
             return (
-              <button key={c.id} onClick={() => setSelId(c.id)}
+              <button key={c.id} onClick={() => { setSelId(c.id); setMobileTab('eval'); }}
                 className={clsx(
                   'p-4 rounded-xl text-left transition-all border',
                   selId === c.id ? 'bg-accent/10 border-accent' : 'bg-[#242424] border-white/5 hover:border-white/20'
@@ -91,7 +121,10 @@ export default function AssessorDashboard() {
       </div>
 
       {/* ═══ Right Panel ═══ */}
-      <div className="flex-grow flex flex-col overflow-hidden bg-charcoal">
+      <div className={clsx(
+        "flex-grow flex flex-col overflow-hidden bg-charcoal",
+        mobileTab !== 'eval' && 'hidden md:flex'
+      )}>
 
         {/* Disclaimer banner */}
         <div className="bg-amber-900/30 border-b border-amber-900/50 px-5 py-2.5 flex items-center gap-2.5 text-amber-500 text-sm font-semibold shrink-0">
@@ -220,16 +253,16 @@ export default function AssessorDashboard() {
         </div>
 
         {/* Action bar */}
-        <div className="bg-[#121212] border-t border-white/10 px-5 py-4 flex flex-wrap justify-between items-center gap-3 shrink-0">
-          <button className="text-white/50 hover:text-white font-semibold text-sm underline underline-offset-4">{t('saveDraft')}</button>
-          <div className="flex gap-2 flex-wrap">
-            <button className="px-4 py-2.5 bg-transparent border-2 border-red-500/50 text-red-400 hover:bg-red-500/10 rounded-xl font-semibold text-sm transition-colors">
+        <div className="bg-[#121212] border-t border-white/10 px-4 sm:px-5 py-3 sm:py-4 flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-2.5 sm:gap-3 shrink-0">
+          <button className="text-white/50 hover:text-white font-semibold text-xs sm:text-sm underline underline-offset-4 text-center sm:text-left">{t('saveDraft')}</button>
+          <div className="flex gap-2 flex-wrap sm:flex-nowrap">
+            <button className="flex-1 sm:flex-initial px-3 sm:px-4 py-2.5 bg-transparent border-2 border-red-500/50 text-red-400 hover:bg-red-500/10 rounded-xl font-semibold text-xs sm:text-sm transition-colors text-center">
               {t('notYetCompetent')}
             </button>
-            <button className="px-4 py-2.5 bg-transparent border-2 border-white/20 text-white/70 hover:bg-white/10 rounded-xl font-semibold text-sm transition-colors">
+            <button className="flex-1 sm:flex-initial px-3 sm:px-4 py-2.5 bg-transparent border-2 border-white/20 text-white/70 hover:bg-white/10 rounded-xl font-semibold text-xs sm:text-sm transition-colors text-center">
               {t('requestEvidence')}
             </button>
-            <button className="px-6 py-2.5 bg-accent hover:bg-accent-light text-charcoal rounded-xl font-semibold text-sm transition-colors">
+            <button className="w-full sm:w-auto px-5 sm:px-6 py-2.5 bg-accent hover:bg-accent-light text-charcoal rounded-xl font-semibold text-xs sm:text-sm transition-colors text-center font-display font-bold">
               {t('recommendCert')}
             </button>
           </div>

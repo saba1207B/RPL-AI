@@ -97,13 +97,13 @@ export default function SelfDeclaration() {
                   <h2 className="text-xl font-bold text-textPrimary mb-1">{t(lang, 'whatWork')}</h2>
                   <p className="text-textSecondary text-sm mb-6">{t(lang, 'tapPicture')}</p>
 
-                  <div className="grid grid-cols-3 gap-3">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3">
                     {TRADES_CONFIG.map((tr) => {
                       const Icon = tr.icon;
                       const sel = trade === tr.id;
                       return (
                         <button key={tr.id} onClick={() => setTrade(tr.id)}
-                          className={`flex flex-col items-center gap-2 p-4 rounded-xl border-2 transition-all ${
+                          className={`flex flex-col items-center gap-2 p-3 sm:p-4 rounded-xl border-2 transition-all ${
                             sel ? 'border-teal bg-teal/5 shadow-md' : 'border-borderClr bg-white hover:border-teal/30'
                           }`}
                         >
