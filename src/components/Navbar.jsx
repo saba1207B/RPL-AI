@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useTheme } from '../i18n/ThemeContext';
@@ -13,6 +13,28 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const { lang, changeLang, t } = useLanguage();
   const { theme, toggleTheme } = useTheme();
+
+  const [bannerDismissed, setBannerDismissed] = useState(() => {
+    try {
+      return sessionStorage.getItem('demo_banner_dismissed') === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  const handleDismissBanner = () => {
+    setBannerDismissed(true);
+    try {
+      sessionStorage.setItem('demo_banner_dismissed', 'true');
+    } catch {}
+  };
+
+  const handleRestoreBanner = () => {
+    setBannerDismissed(false);
+    try {
+      sessionStorage.removeItem('demo_banner_dismissed');
+    } catch {}
+  };
 
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 10);
@@ -50,7 +72,7 @@ export default function Navbar() {
     <>
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${navClasses} ${scrolled ? 'shadow-lg' : ''}`}>
         {/* Mandatory Demo Mode Banner at very top */}
-        <DemoBanner />
+        {!bannerDismissed && <DemoBanner onDismiss={handleDismissBanner} />}
 
         {/* Top accent stripe */}
         {!isPortfolio && <div className="h-1 bg-teal w-full transition-colors" />}
@@ -94,6 +116,25 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2 ml-auto md:ml-4">
+            {/* When banner is dismissed, show compact inline restore chip in navbar controls */}
+            {bannerDismissed && (
+              <button
+                onClick={handleRestoreBanner}
+                className={`inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-1.5 rounded-lg text-[10px] font-mono font-bold tracking-wider transition-all border shrink-0 ${
+                  isPortfolio
+                    ? 'bg-[#F5C518] text-[#0A0B12] border-[#0A0B12]/20 hover:bg-[#ffe47a]'
+                    : 'bg-[#0B1528] text-teal-light border-teal/40 hover:bg-navy'
+                }`}
+                title="Click to view Demo Mode details"
+                aria-label="View Demo Mode details"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+                <span className="hidden sm:inline">DEMO MODE</span>
+                <span className="sm:hidden">DEMO</span>
+                <ChevronDown size={12} />
+              </button>
+            )}
+
             <select
               value={lang}
               onChange={(e) => changeLang(e.target.value)}

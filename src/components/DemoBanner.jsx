@@ -1,52 +1,9 @@
-import { useState, useEffect } from 'react';
-import { AlertCircle, ChevronDown, X, Info } from 'lucide-react';
+import { X } from 'lucide-react';
 import { useTheme } from '../i18n/ThemeContext';
 
-export default function DemoBanner() {
+export default function DemoBanner({ onDismiss }) {
   const { theme } = useTheme();
   const isPortfolio = theme === 'portfolio';
-
-  const [dismissed, setDismissed] = useState(() => {
-    try {
-      return sessionStorage.getItem('demo_banner_dismissed') === 'true';
-    } catch {
-      return false;
-    }
-  });
-
-  const handleDismiss = () => {
-    setDismissed(true);
-    try {
-      sessionStorage.setItem('demo_banner_dismissed', 'true');
-    } catch {}
-  };
-
-  const handleRestore = () => {
-    setDismissed(false);
-    try {
-      sessionStorage.removeItem('demo_banner_dismissed');
-    } catch {}
-  };
-
-  if (dismissed) {
-    return (
-      <div className="fixed top-2 right-4 z-[60]">
-        <button
-          onClick={handleRestore}
-          className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-mono font-bold tracking-wider shadow-lg transition-all border ${
-            isPortfolio
-              ? 'bg-[#F5C518] text-[#0A0B12] border-[#0A0B12]/20 hover:scale-105'
-              : 'bg-[#0B1528] text-teal-light border-teal/40 hover:bg-navy hover:scale-105'
-          }`}
-          title="Click to view Demo Mode details"
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
-          <span>DEMO MODE</span>
-          <ChevronDown size={12} />
-        </button>
-      </div>
-    );
-  }
 
   return (
     <aside
@@ -73,7 +30,7 @@ export default function DemoBanner() {
 
           {/* Mobile-only dismiss button on top line */}
           <button
-            onClick={handleDismiss}
+            onClick={onDismiss}
             className={`md:hidden px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-wide transition-all uppercase flex items-center gap-1 ${
               isPortfolio
                 ? 'bg-[#0A0B12]/10 hover:bg-[#0A0B12] hover:text-[#F5C518] text-[#0A0B12] border border-[#0A0B12]/20'
@@ -102,7 +59,7 @@ export default function DemoBanner() {
 
         {/* Desktop-only dismiss button */}
         <button
-          onClick={handleDismiss}
+          onClick={onDismiss}
           className={`hidden md:flex shrink-0 px-2.5 py-1 rounded text-[10px] font-mono font-bold tracking-wide transition-all uppercase items-center gap-1 ${
             isPortfolio
               ? 'bg-[#0A0B12]/10 hover:bg-[#0A0B12] hover:text-[#F5C518] text-[#0A0B12] border border-[#0A0B12]/20'
