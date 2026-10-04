@@ -11,9 +11,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <div className={`w-8 h-8 rounded ${isPortfolio ? 'bg-accent text-[#0a0b12]' : 'bg-white/10 text-white'} flex items-center justify-center text-xs font-bold`}>RPL</div>
-              <span className="font-semibold text-white text-sm">{t('rplAiAssessment')}</span>
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className={`w-8 h-8 rounded-lg ${isPortfolio ? 'bg-accent text-[#0a0b12]' : 'bg-white/10 text-white border border-white/20'} flex items-center justify-center text-xs font-bold shrink-0`}>VT</div>
+              <span className="font-semibold text-white text-sm sm:text-base tracking-tight">VOID TRACE RPL AI ASSISTANT</span>
             </div>
             <p className="text-sm leading-relaxed">
               {t('footerDesc')}

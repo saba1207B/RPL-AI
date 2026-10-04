@@ -40,7 +40,7 @@ export const en = {
   navAssessor: 'ASSESSOR',
   govtInitiative: 'Government of India Initiative',
   ministryName: 'Ministry of Skill Development & Entrepreneurship',
-  rplAiAssessment: 'RPL AI Assessment',
+  rplAiAssessment: 'VOID TRACE RPL AI ASSISTANT',
 
   // Landing Hero & Badges
   heroTitle: 'Get your skills certified',
@@ -213,7 +213,7 @@ export const en = {
   problemId: 'Problem ID: SIH26242',
   themeSmartEdu: 'Theme: Smart Education',
   categorySoftware: 'Category: Software',
-  footerCopyright: "© 2026 RPL AI Assessment Tool — Built for India's skilled workforce"
+  footerCopyright: "© 2026 VOID TRACE RPL AI ASSISTANT — Built for India's skilled workforce"
 };
 
 const allLangsMap = {

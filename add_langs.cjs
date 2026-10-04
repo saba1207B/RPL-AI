@@ -55,7 +55,7 @@ const enKeys = {
     dragFiles: 'Or drag files here',
     fileTypes: 'JPG, PNG, MP4, PDF — up to 50 MB',
     offlineUpload: 'You can do this without internet.',
-    offlineUploadSub: " Files save on your phone and upload when youre back online.\,
+    offlineUploadSub: "Files save on your phone and upload when you're back online.",
     suggestedMatch: 'Suggested Match',
     aiSuggestion: 'AI Suggestion',
     match: 'match',

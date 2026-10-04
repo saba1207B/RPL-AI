@@ -105,7 +105,7 @@ export const TRANSLATIONS = {
     "navAssessor": "ASSESSOR",
     "govtInitiative": "Government of India Initiative",
     "ministryName": "Ministry of Skill Development & Entrepreneurship",
-    "rplAiAssessment": "RPL AI Assessment",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "Get your skills certified",
     "heroSub": "For workers who learned on the job. No formal education required.",
     "portfolioHeroH1_1": "Assess skills.",
@@ -248,7 +248,7 @@ export const TRANSLATIONS = {
     "performBasicWork": "Perform basic trade work",
     "readDrawings": "Read simple drawings or specifications",
     "followSafety": "Follow workshop safety rules",
-    "footerDesc": "AI-Assisted Skill Assessment Tool for Recognition of Prior Learning under the Smart India Hackathon.",
+    "footerDesc": "VOID TRACE RPL AI ASSISTANT — AI-Assisted Skill Assessment Tool for Recognition of Prior Learning under the Smart India Hackathon.",
     "sponsoredBy": "Sponsored by",
     "msdeFullName": "Ministry of Skill Development & Entrepreneurship (MSDE)",
     "ncvetFullName": "National Council for Vocational Education & Training (NCVET)",
@@ -256,7 +256,7 @@ export const TRANSLATIONS = {
     "problemId": "Problem ID: SIH26242",
     "themeSmartEdu": "Theme: Smart Education",
     "categorySoftware": "Category: Software",
-    "footerCopyright": "© 2026 RPL AI Assessment Tool — Built for India's skilled workforce"
+    "footerCopyright": "© 2026 VOID TRACE RPL AI ASSISTANT — Built for India's skilled workforce"
   },
   "hi": {
     "navHome": "होम",
@@ -265,7 +265,7 @@ export const TRANSLATIONS = {
     "navAssessor": "मूल्यांकनकर्ता",
     "govtInitiative": "भारत सरकार की पहल",
     "ministryName": "कौशल विकास एवं उद्यमिता मंत्रालय",
-    "rplAiAssessment": "आरपीएल एआई कौशल मूल्यांकन",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "अपने कौशल को प्रमाणित कराएं",
     "heroSub": "काम के दौरान सीखने वाले श्रमिकों के लिए। औपचारिक शिक्षा की आवश्यकता नहीं।",
     "portfolioHeroH1_1": "कौशल परखें।",
@@ -416,7 +416,7 @@ export const TRANSLATIONS = {
     "problemId": "समस्या आईडी: SIH26242",
     "themeSmartEdu": "थीम: स्मार्ट शिक्षा",
     "categorySoftware": "श्रेणी: सॉफ्टवेयर",
-    "footerCopyright": "© २०२६ आरपीएल एआई मूल्यांकन उपकरण — भारत के कुशल कार्यबल के लिए निर्मित"
+    "footerCopyright": "© २०२६ VOID TRACE RPL AI ASSISTANT — भारत के कुशल कार्यबल के लिए निर्मित"
   },
   "bn": {
     "navHome": "হোਮ",
@@ -425,7 +425,7 @@ export const TRANSLATIONS = {
     "navAssessor": "মূল্যায়নকারী",
     "govtInitiative": "ভারত সরকারের উদ্যোগ",
     "ministryName": "দক্ষতা উন্নয়ন ও উদ্যোক্তা মন্ত্রক",
-    "rplAiAssessment": "আরপিএল এআই দক্ষতা মূল্যায়ন",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "আপনার দক্ষতার সরকারি স্বীকৃতি পান",
     "heroSub": "কাজের মাধ্যমে শেখা কর্মীদের জন্য। কোনো প্রাতিষ্ঠানিক শিক্ষার প্রয়োজন নেই।",
     "portfolioHeroH1_1": "দক্ষতা যাচাই।",
@@ -576,7 +576,7 @@ export const TRANSLATIONS = {
     "problemId": "সমস্যা আইডি: SIH26242",
     "themeSmartEdu": "থিম: স্মার্ট শিক্ষা",
     "categorySoftware": "বিভাগ: সফটওয়্যার",
-    "footerCopyright": "© ২০২৬ আরপিএল এআই মূল্যায়ন সরঞ্জাম — ভারতের দক্ষ কর্মীবাহিনীর জন্য নির্মিত"
+    "footerCopyright": "© ২০২৬ VOID TRACE RPL AI ASSISTANT — ভারতের দক্ষ কর্মীবাহিনীর জন্য নির্মিত"
   },
   "te": {
     "navHome": "హోమ్",
@@ -585,7 +585,7 @@ export const TRANSLATIONS = {
     "navAssessor": "మూల్యాంకనదారు",
     "govtInitiative": "భారత ప్రభుత్వ చొరవ",
     "ministryName": "నైపుణ్యాభివృద్ధి మరియు వ్యవస్థాపకత మంత్రిత్వ శాఖ",
-    "rplAiAssessment": "RPL AI నైపుణ్య మూల్యాంకనం",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "మీ నైపుణ్యాలకు ధృవీకరణ పొందండి",
     "heroSub": "పని చేస్తూ నేర్చుకున్న కార్మికుల కోసం. అధికారిక విద్య అవసరం లేదు.",
     "portfolioHeroH1_1": "నైపుణ్యం గుర్తించండి.",
@@ -736,7 +736,7 @@ export const TRANSLATIONS = {
     "problemId": "సమస్య ID: SIH26242",
     "themeSmartEdu": "థీమ్: స్మార్ట్ విద్య",
     "categorySoftware": "వర్గం: సాఫ్ట్‌వేర్",
-    "footerCopyright": "© 2026 RPL AI అసెస్‌మెంట్ టూల్ — భారతదేశ శ్రామిక శక్తి కోసం ప్రత్యేకంగా రూపొందించబడింది"
+    "footerCopyright": "© 2026 VOID TRACE RPL AI ASSISTANT — భారతదేశ శ్రామిక शक्ति కోసం ప్రత్యేకంగా రూపొందించబడింది"
   },
   "mr": {
     "navHome": "मुख्यपृष्ठ",
@@ -745,7 +745,7 @@ export const TRANSLATIONS = {
     "navAssessor": "मूल्यांकनकर्ता",
     "govtInitiative": "भारत सरकारचा उपक्रम",
     "ministryName": "कौशल्य विकास आणि उद्योजकता मंत्रालय",
-    "rplAiAssessment": "आरपीएल एआय कौशल्य मूल्यांकन",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "आपल्या कौशल्यांचे प्रमाणीकरण करा",
     "heroSub": "कामातून शिकणाऱ्या कामगारांसाठी. औपचारिक शिक्षणाची गरज नाही.",
     "portfolioHeroH1_1": "कौशल्य परखा.",
@@ -896,7 +896,7 @@ export const TRANSLATIONS = {
     "problemId": "समस्या आयडी: SIH26242",
     "themeSmartEdu": "थीम: स्मार्ट शिक्षण",
     "categorySoftware": "श्रेणी: सॉफ्टवेअर",
-    "footerCopyright": "© २०२६ आरपीएल एआय मूल्यांकन साधन — भारताच्या कुशल कामगारांसाठी निर्मित"
+    "footerCopyright": "© २०२६ VOID TRACE RPL AI ASSISTANT — भारताच्या कुशल कामगारांसाठी निर्मित"
   },
   "ta": {
     "navHome": "முகப்பு",
@@ -905,7 +905,7 @@ export const TRANSLATIONS = {
     "navAssessor": "மதிப்பீட்டாளர்",
     "govtInitiative": "இந்திய அரசு முன்முயற்சி",
     "ministryName": "திறன் மேம்பாடு மற்றும் தொழில்முனைவோர் அமைச்சகம்",
-    "rplAiAssessment": "ஆர்பிஎல் AI திறன் மதிப்பீடு",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "உங்கள் திறன்களுக்கு சான்றிதழ் பெறுங்கள்",
     "heroSub": "பணியில் கற்றுக்கொண்ட தொழிலாளர்களுக்கு. முறையான கல்வி தேவையில்லை.",
     "portfolioHeroH1_1": "திறனை மதிப்பிடுங்கள்.",
@@ -1056,7 +1056,7 @@ export const TRANSLATIONS = {
     "problemId": "பிரச்சனை எண்: SIH26242",
     "themeSmartEdu": "கருப்பொருள்: ஸ்மார்ட் கல்வி",
     "categorySoftware": "பிரிவு: மென்பொருள்",
-    "footerCopyright": "© 2026 RPL AI திறன் மதிப்பீட்டுக் கருவி — இந்தியாவின் திறமையான தொழிலாளர்களுக்காக உருவாக்கப்பட்டது"
+    "footerCopyright": "© 2026 VOID TRACE RPL AI ASSISTANT — இந்தியாவின் திறமையான தொழிலாளர்களுக்காக உருவாக்கப்பட்டது"
   },
   "ur": {
     "navHome": "ہوم",
@@ -1065,7 +1065,7 @@ export const TRANSLATIONS = {
     "navAssessor": "جانچ کنندہ",
     "govtInitiative": "حکومت ہند کی پیش قدمی",
     "ministryName": "وزارت برائے فروغ ہنر و صنعت کاری",
-    "rplAiAssessment": "آر پی ایل اے آئی مہارت کی جانچ",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "اپنی صلاحیتوں کا سرکاری سرٹیفکیٹ حاصل کریں",
     "heroSub": "کام کے دوران سیکھنے والے کاریگروں کے لیے۔ کسی رسمی تعلیم کی ضرورت نہیں۔",
     "portfolioHeroH1_1": "مہارت پرکھیں۔",
@@ -1216,7 +1216,7 @@ export const TRANSLATIONS = {
     "problemId": "مسئلہ کوڈ: SIH26242",
     "themeSmartEdu": "تھیم: اسمارٹ تعلیم",
     "categorySoftware": "زمرہ: سافٹ ویئر",
-    "footerCopyright": "© ۲۰۲۶ آر پی ایل اے آئی جانچ ٹول — ہندوستان کے ہنر مند کاریگروں کے لیے مخصوص"
+    "footerCopyright": "© ۲۰۲۶ VOID TRACE RPL AI ASSISTANT — ہندوستان کے ہنر مند کاریگروں کے لیے مخصوص"
   },
   "gu": {
     "navHome": "હોમ",
@@ -1225,7 +1225,7 @@ export const TRANSLATIONS = {
     "navAssessor": "મૂલ્યાંકનકાર",
     "govtInitiative": "ભારત સરકારની પહેલ",
     "ministryName": "કૌશલ્ય વિકાસ અને ઉદ્યોગસાહસિકતા મંત્રાલય",
-    "rplAiAssessment": "RPL AI કૌશલ્ય મૂલ્યાંકન",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "તમારા કૌશલ્યનું પ્રમાણીકરણ મેળવો",
     "heroSub": "કામ દ્વારા શીખેલા કારીગરો માટે. કોઈ ઔપચારિક શિક્ષણની જરૂર નથી.",
     "portfolioHeroH1_1": "હુનર પારખો.",
@@ -1376,7 +1376,7 @@ export const TRANSLATIONS = {
     "problemId": "સમસ્યા આઈડી: SIH26242",
     "themeSmartEdu": "થીમ: સ્માર્ટ શિક્ષણ",
     "categorySoftware": "શ્રેણી: સોફ્ટવેર",
-    "footerCopyright": "© ૨૦૨૬ RPL AI મૂલ્યાંકન સાધન — ભારતના કુશળ શ્રમિકો માટે સમર્પિત"
+    "footerCopyright": "© ૨૦૨૬ VOID TRACE RPL AI ASSISTANT — ભારતના કુશળ શ્રમિકો માટે સમર્પિત"
   },
   "kn": {
     "navHome": "ಮುಖಪುಟ",
@@ -1385,7 +1385,7 @@ export const TRANSLATIONS = {
     "navAssessor": "ಮೌಲ್ಯಮಾಪಕ",
     "govtInitiative": "ಭಾರತ ಸರ್ಕಾರದ ಉಪಕ್ರಮ",
     "ministryName": "ಕೌಶಲ್ಯ ಅಭಿವೃದ್ಧಿ ಮತ್ತು ವಾಣಿಜ್ಯೋದ್ಯಮ ಸಚಿವಾಲಯ",
-    "rplAiAssessment": "RPL AI ಕೌಶಲ್ಯ ಮೌಲ್ಯಮಾಪನ",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "ನಿಮ್ಮ ಕೌಶಲ್ಯಗಳಿಗೆ ಪ್ರಮಾಣಪತ್ರ ಪಡೆಯಿರಿ",
     "heroSub": "ಕೆಲಸದ ಮೂಲಕ ಕಲಿತ ಕಾರ್ಮಿಕರಿಗಾಗಿ. ಯಾವುದೇ ಔಪಚಾರಿಕ ಶಿಕ್ಷಣದ ಅಗತ್ಯವಿಲ್ಲ.",
     "portfolioHeroH1_1": "ಕೌಶಲ್ಯ ಪರೀಕ್ಷಿಸಿ.",
@@ -1536,7 +1536,7 @@ export const TRANSLATIONS = {
     "problemId": "ಸಮಸ್ಯೆ ID: SIH26242",
     "themeSmartEdu": "ವಿಷಯ: ಸ್ಮಾರ್ಟ್ ಶಿಕ್ಷಣ",
     "categorySoftware": "ವರ್ಗ: ತಂತ್ರಾಂಶ (Software)",
-    "footerCopyright": "© 2026 RPL AI ಮೌಲ್ಯಮಾಪನ ಉಪಕರಣ — ಭಾರತದ ನುರಿತ ಶ್ರಮಿಕರಿಗಾಗಿ ಸಮರ್ಪಿತ"
+    "footerCopyright": "© 2026 VOID TRACE RPL AI ASSISTANT — ಭಾರತದ ನುರಿತ ಶ್ರಮಿಕರಿಗಾಗಿ ಸಮರ್ಪಿತ"
   },
   "ml": {
     "navHome": "ഹോം",
@@ -1545,7 +1545,7 @@ export const TRANSLATIONS = {
     "navAssessor": "മൂല്യനിർണ്ണയകൻ",
     "govtInitiative": "ഭാരത സർക്കാരിന്റെ സംരംഭം",
     "ministryName": "നൈപുണ്യ വികസന, സംരംഭകത്വ മന്ത്രാലയം",
-    "rplAiAssessment": "RPL AI നൈപുണ്യ മൂല്യനിർണ്ണയം",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "നിങ്ങളുടെ കഴിവുകൾക്ക് സർട്ടിഫിക്കറ്റ് നേടൂ",
     "heroSub": "തൊഴിലിലൂടെ പഠിച്ച തൊഴിലാളികൾക്കായി. ഔപചാരിക വിദ്യാഭ്യാസം ആവശ്യമില്ല.",
     "portfolioHeroH1_1": "നൈപുണ്യം അളക്കുക.",
@@ -1696,7 +1696,7 @@ export const TRANSLATIONS = {
     "problemId": "പ്രശ്ന ഐഡി: SIH26242",
     "themeSmartEdu": "തീം: സ്മാർട്ട് വിദ്യാഭ്യാസം",
     "categorySoftware": "വിഭാഗം: സോഫ്റ്റ്‌വെയർ",
-    "footerCopyright": "© 2026 RPL AI മൂല്യനിർണ്ണയ ഉപകരണം — ഭാരതത്തിന്റെ വിദഗ്ദ്ധ തൊഴിലാളികൾക്കായി നിർമ്മിച്ചത്"
+    "footerCopyright": "© 2026 VOID TRACE RPL AI ASSISTANT — ഭാരതത്തിന്റെ വിദഗ്ദ്ധ തൊഴിലാളികൾക്കായി നിർമ്മിച്ചത്"
   },
   "or": {
     "navHome": "ମୂଳପୃଷ୍ଠା",
@@ -1705,7 +1705,7 @@ export const TRANSLATIONS = {
     "navAssessor": "ମୂଲ୍ୟାଙ୍କନକାରୀ",
     "govtInitiative": "ଭାରତ ସରକାରଙ୍କ ପଦକ୍ଷେପ",
     "ministryName": "ଦକ୍ଷତା ବିକାଶ ଓ ଉଦ୍ୟୋଗିତା ମନ୍ତ୍ରଣାଳୟ",
-    "rplAiAssessment": "RPL AI ଦକ୍ଷତା ମୂଲ୍ୟାଙ୍କନ",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "ଆପଣଙ୍କ ଦକ୍ଷତାକୁ ପ୍ରମାଣିତ କରନ୍ତୁ",
     "heroSub": "କାର୍ଯ୍ୟରୁ ଶିଖିଥିବା ଶ୍ରମିକମାନଙ୍କ ପାଇଁ। କୌଣସି ଆନୁଷ୍ଠାନିକ ଶିକ୍ଷାର ଆବଶ୍ୟକତା ନାହିଁ।",
     "portfolioHeroH1_1": "ଦକ୍ଷତା ପରଖନ୍ତୁ।",
@@ -1856,7 +1856,7 @@ export const TRANSLATIONS = {
     "problemId": "ସମସ୍ୟା ଆଇଡି: SIH26242",
     "themeSmartEdu": "ଥିମ୍: ସ୍ମାର୍ଟ ଶିକ୍ଷା",
     "categorySoftware": "ବର୍ଗ: ସଫ୍ଟୱେୟାର୍",
-    "footerCopyright": "© ୨୦୨୬ RPL AI ମୂଲ୍ୟାଙ୍କନ ଉପକରଣ — ଭାରତର କୁଶଳୀ ଶ୍ରମିକମାନଙ୍କ ପାଇଁ ନିର୍ମିତ"
+    "footerCopyright": "© ୨୦୨୬ VOID TRACE RPL AI ASSISTANT — ଭାରତର କୁଶଳୀ ଶ୍ରମିକମାନଙ୍କ ପାଇଁ ନିର୍ମିତ"
   },
   "pa": {
     "navHome": "ਮੁੱਖ ਸਫ਼ਾ",
@@ -1865,7 +1865,7 @@ export const TRANSLATIONS = {
     "navAssessor": "ਮੁਲਾਂਕਣਕਰਤਾ",
     "govtInitiative": "ਭਾਰਤ ਸਰਕਾਰ ਦਾ ਉਪਰਾਲਾ",
     "ministryName": "ਹੁਨਰ ਵਿਕਾਸ ਅਤੇ ਉੱਦਮਤਾ ਮੰਤਰਾਲਾ",
-    "rplAiAssessment": "ਆਰਪੀਐਲ ਏਆਈ ਹੁਨਰ ਮੁਲਾਂਕਣ",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "ਆਪਣੇ ਹੁਨਰ ਦਾ ਸਰਟੀਫਿਕੇਟ ਪ੍ਰਾਪਤ ਕਰੋ",
     "heroSub": "ਕੰਮ ਕਰਦੇ ਹੋਏ ਸਿੱਖਣ ਵਾਲੇ ਕਾਮਿਆਂ ਲਈ। ਰਸਮੀ ਸਿੱਖਿਆ ਦੀ ਕੋਈ ਲੋੜ ਨਹੀਂ।",
     "portfolioHeroH1_1": "ਹੁਨਰ ਪਰਖੋ।",
@@ -2016,7 +2016,7 @@ export const TRANSLATIONS = {
     "problemId": "ਸਮੱਸਿਆ ਆਈਡੀ: SIH26242",
     "themeSmartEdu": "ਥੀਮ: ਸਮਾਰਟ ਸਿੱਖਿਆ",
     "categorySoftware": "ਸ਼੍ਰੇਣੀ: ਸਾਫਟਵੇਅਰ",
-    "footerCopyright": "© ੨੦੨੬ RPL AI ਮੁਲਾਂਕਣ ਟੂਲ — ਭਾਰਤ ਦੇ ਹੁਨਰਮੰਦ ਕਾਮਿਆਂ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ"
+    "footerCopyright": "© ੨੦੨੬ VOID TRACE RPL AI ASSISTANT — ਭਾਰਤ ਦੇ ਹੁਨਰਮੰਦ ਕਾਮਿਆਂ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ"
   },
   "as": {
     "navHome": "ঘৰ",
@@ -2025,7 +2025,7 @@ export const TRANSLATIONS = {
     "navAssessor": "মূল্যায়নকাৰী",
     "govtInitiative": "ভাৰত চৰকাৰৰ পদক্ষেপ",
     "ministryName": "দক্ষতা বিকাশ আৰু উদ্যোগ মন্ত্ৰালয়",
-    "rplAiAssessment": "RPL AI দক্ষতা মূল্যায়ন",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "আপোনাৰ দক্ষতাক প্ৰমাণিত কৰক",
     "heroSub": "কামত শিকা শ্ৰমিকসকলৰ বাবে। আনুষ্ঠানিক শিক্ষাৰ প্ৰয়োজন নাই।",
     "portfolioHeroH1_1": "দক্ষতা পৰীক্ষা।",
@@ -2176,7 +2176,7 @@ export const TRANSLATIONS = {
     "problemId": "সমস্যা আইডি: SIH26242",
     "themeSmartEdu": "বিষয়বস্তু: স্মাৰ্ট শিক্ষা",
     "categorySoftware": "শ্ৰেণী: চফ্টৱেৰ",
-    "footerCopyright": "© ২০২৬ RPL AI মূল্যায়ন সঁজুলি — ভাৰতৰ দক্ষ শ্ৰমিকসকলৰ বাবে নিৰ্মিত"
+    "footerCopyright": "© ২০২৬ VOID TRACE RPL AI ASSISTANT — ভাৰতৰ দক্ষ শ্ৰমিকসকলৰ বাবে নিৰ্মিত"
   },
   "mai": {
     "navHome": "होम",
@@ -2185,7 +2185,7 @@ export const TRANSLATIONS = {
     "navAssessor": "परीक्षक",
     "govtInitiative": "भारत सरकारक पहल",
     "ministryName": "कौशल विकास आ उद्यमिता मंत्रालय",
-    "rplAiAssessment": "आरपीएल एआई कौशल मूल्यांकन",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "अपन कौशलक प्रमाणपत्र पाबू",
     "heroSub": "काजक दौरान सिखनिहार श्रमिक लोकनिक लेल। कोनो औपचारिक शिक्षाक आवश्यकता नहि।",
     "portfolioHeroH1_1": "कौशल परखु।",
@@ -2336,7 +2336,7 @@ export const TRANSLATIONS = {
     "problemId": "समस्या आईडी: SIH26242",
     "themeSmartEdu": "थीम: स्मार्ट शिक्षा",
     "categorySoftware": "श्रेणी: सॉफ्टवेयर",
-    "footerCopyright": "© २०२६ आरपीएल एआई मूल्यांकन उपकरण — भारतक कुशल कार्यबल लेल निर्मित"
+    "footerCopyright": "© २०२६ VOID TRACE RPL AI ASSISTANT — भारतक कुशल कार्यबल लेल निर्मित"
   },
   "sat": {
     "navHome": "ᱚᱲᱟᱜ",
@@ -2345,7 +2345,7 @@ export const TRANSLATIONS = {
     "navAssessor": "ᱵᱤᱰᱟᱹᱣᱤᱭᱟᱹ",
     "govtInitiative": "ᱵᱷᱟᱨᱚᱛ ᱥᱚᱨᱠᱟᱨᱟᱜ ᱮᱛᱚᱦᱚᱵ",
     "ministryName": "ᱦᱩᱱᱟᱹᱨ ᱩᱛᱱᱟᱹᱣ ᱟᱨ ᱩᱫᱽᱭᱚᱜᱽ ᱢᱚᱱᱛᱨᱟᱲᱚᱭ",
-    "rplAiAssessment": "RPL AI ᱦᱩᱱᱟᱹᱨ ᱵᱤᱰᱟᱹᱣ",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "ᱟᱢᱟᱜ ᱦᱩᱱᱟᱹᱨ ᱨᱮᱱᱟᱜ ᱥᱚᱨᱠᱟᱨᱤ ᱥᱟᱠᱷᱤ ᱦᱟᱛᱟᱣ ᱢᱮ",
     "heroSub": "ᱠᱟᱹᱢᱤ ᱠᱟᱛᱮ ᱪᱮᱫ ᱟᱠᱟᱱ ᱠᱟᱹᱢᱤᱭᱟᱹ ᱠᱚ ᱞᱟᱹᱜᱤᱫ᱾ ᱪᱮᱫ ᱟᱥᱲᱟ ᱯᱟᱲᱦᱟᱣ ᱦᱚᱸ ᱵᱟᱝ ᱞᱟᱹᱠᱛᱤᱭᱟ᱾",
     "portfolioHeroH1_1": "ᱦᱩᱱᱟᱹᱨ ᱯᱟᱨᱠᱷᱟᱣ ᱢᱮ᱾",
@@ -2496,7 +2496,7 @@ export const TRANSLATIONS = {
     "problemId": "ᱮᱴᱠᱮᱴᱚᱬᱮ ID: SIH26242",
     "themeSmartEdu": "ᱛᱷᱤᱢ: ᱥᱢᱟᱨᱴ ᱥᱮᱪᱮᱫ",
     "categorySoftware": "ᱛᱷᱟᱠ: ᱥᱚᱯᱷᱴᱣᱮᱭᱟᱨ",
-    "footerCopyright": "© ᱒᱐᱒᱖ RPL AI ᱵᱤᱰᱟᱹᱣ ᱦᱟᱹᱛᱤᱭᱟᱹᱨ — ᱥᱤᱧᱚᱛ ᱨᱤᱱ ᱠᱟᱹᱢᱤᱭᱟᱹ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱯᱲᱟᱣ"
+    "footerCopyright": "© ᱒᱐᱒᱖ VOID TRACE RPL AI ASSISTANT — ᱥᱤᱧᱚᱛ ᱨᱤᱱ ᱠᱟᱹᱢᱤᱭᱟᱹ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱯᱲᱟᱣ"
   },
   "ks": {
     "navHome": "ہوم",
@@ -2505,7 +2505,7 @@ export const TRANSLATIONS = {
     "navAssessor": "جانچ کرن وول",
     "govtInitiative": "حکومتِ ہندُک اَکھ قَدم",
     "ministryName": "وزارتِ ہنرمندی و صنعت کاری",
-    "rplAiAssessment": "RPL AI ہُنَر جانچ",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "پَننِس ہُنرَس حٲصل کٔریو سَرکٲری سَنَد",
     "heroSub": "کٲمؠ کٔرِتھ ہؠچھَن والؠن کھٲترٕ۔ کانٛہہ رَسمی پٔرَن لٲزمی نہٕ۔",
     "portfolioHeroH1_1": "ہُنَر پرکھِو۔",
@@ -2656,7 +2656,7 @@ export const TRANSLATIONS = {
     "problemId": "مسئلہٕ کوڈ: SIH26242",
     "themeSmartEdu": "تھیم: سمارٹ تعلیم",
     "categorySoftware": "شعبہٕ: سافٹ ویئر",
-    "footerCopyright": "© ۲۰۲۶ RPL AI جانچ ٹوٗل — ہِندوستان کؠن ہُنرمَند کاریگَرَن خٲطرٕ تَیار کَرنہٕ آمُت"
+    "footerCopyright": "© ۲۰۲۶ VOID TRACE RPL AI ASSISTANT — ہِندوستان کؠن ہُنرمَند کاریگَرَن خٲطرٕ تَیار کَرنہٕ آمُत"
   },
   "ne": {
     "navHome": "गृहपृष्ठ",
@@ -2665,7 +2665,7 @@ export const TRANSLATIONS = {
     "navAssessor": "मूल्यांकनकर्ता",
     "govtInitiative": "भारत सरकारको पहल",
     "ministryName": "कौशल विकास तथा उद्यमशीलता मन्त्रालय",
-    "rplAiAssessment": "RPL AI सीप मूल्यांकन",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "आफ्नो सीपको सरकारी प्रमाणपत्र पाउनुहोस्",
     "heroSub": "काम गरेर सिकेका श्रमिकहरूका लागि। कुनै औपचारिक शिक्षाको आवश्यकता छैन।",
     "portfolioHeroH1_1": "सीप जाँच्नुहोस्।",
@@ -2816,7 +2816,7 @@ export const TRANSLATIONS = {
     "problemId": "समस्या आईडी: SIH26242",
     "themeSmartEdu": "थीम: स्मार्ट शिक्षा",
     "categorySoftware": "श्रेणी: सफ्टवेयर",
-    "footerCopyright": "© २०२६ RPL AI मूल्यांकन उपकरण — भारतका दक्ष श्रमिकहरूका लागि निर्मित"
+    "footerCopyright": "© २०२६ VOID TRACE RPL AI ASSISTANT — भारतका दक्ष श्रमिकहरूका लागि निर्मित"
   },
   "sd": {
     "navHome": "مکي صفحو",
@@ -2825,7 +2825,7 @@ export const TRANSLATIONS = {
     "navAssessor": "جانچيندڙ",
     "govtInitiative": "حڪومت هند جي پيشقدمي",
     "ministryName": "مهارتن جي ترقي ۽ صنعتڪاري واري وزارت",
-    "rplAiAssessment": "RPL AI مهارت جي جانچ",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "پنهنجي ڪاريگري ۽ مهارت جو سرڪاري سرٽيفڪيٽ حاصل ڪريو",
     "heroSub": "ڪم دوران سکندڙ ڪاريگرن لاءِ۔ بنا ڪنهن رسمي تعليم جي۔",
     "portfolioHeroH1_1": "مهارت پرکيو۔",
@@ -2976,7 +2976,7 @@ export const TRANSLATIONS = {
     "problemId": "مسئلو ڪوڊ: SIH26242",
     "themeSmartEdu": "موضوع: سمارٽ تعليم",
     "categorySoftware": "شعبو: سافٽ ويئر",
-    "footerCopyright": "© ۲۰۲۶ RPL AI جانچ جو اوزار — هندستان جي ڪاريگر پورهيتن لاءِ مخصوص"
+    "footerCopyright": "© ۲۰२۶ VOID TRACE RPL AI ASSISTANT — هندستان جي ڪاريگر پورهيتن لاءِ مخصوص"
   },
   "kok": {
     "navHome": "घर",
@@ -2985,7 +2985,7 @@ export const TRANSLATIONS = {
     "navAssessor": "मूल्यांकनकार",
     "govtInitiative": "भारत सरकाराचो उपक्रम",
     "ministryName": "कौशल्य विकास आनी उद्योजकता मंत्रालय",
-    "rplAiAssessment": "RPL AI कौशल्य मूल्यांकन",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "तुमच्या कौशल्याक सरकारी मान्यता मेळयात",
     "heroSub": "कामा वयल्यान शिकपी कामगारां खातीर. खंयच्याय औपचारिक शिक्षणाची गरज ना.",
     "portfolioHeroH1_1": "कौशल्य पारखात.",
@@ -3136,7 +3136,7 @@ export const TRANSLATIONS = {
     "problemId": "समस्या आयडी: SIH26242",
     "themeSmartEdu": "थीम: स्मार्ट शिक्षण",
     "categorySoftware": "वर्ग: सॉफ्टवेअर",
-    "footerCopyright": "© २०२६ RPL AI मूल्यांकन साधन — भारताच्या कुशल कामगारां खातीर तयार केल्लें"
+    "footerCopyright": "© २०२६ VOID TRACE RPL AI ASSISTANT — भारताच्या कुशल कामगारां खातीर तयार केल्लें"
   },
   "doi": {
     "navHome": "मुख पृष्ठ",
@@ -3145,7 +3145,7 @@ export const TRANSLATIONS = {
     "navAssessor": "मूल्यांकनकर्ता",
     "govtInitiative": "भारत सरकार दी पहल",
     "ministryName": "कौशल विकास ते उद्यमिता मंत्रालय",
-    "rplAiAssessment": "RPL AI हुनर मूल्यांकन",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "अपने हुनर दा सरकारी प्रमाणपत्र लैओ",
     "heroSub": "कम करदे होई सिखने आह्ले कामेयां लेई। औपचारिक पढ़ाई दी कोई लोड़ नेईं।",
     "portfolioHeroH1_1": "हुनर परखो।",
@@ -3296,7 +3296,7 @@ export const TRANSLATIONS = {
     "problemId": "समस्या आईडी: SIH26242",
     "themeSmartEdu": "थीम: स्मार्ट शिक्षा",
     "categorySoftware": "श्रेणी: सॉफ्टवेयर",
-    "footerCopyright": "© २०२६ RPL AI मूल्यांकन उपकरण — भारत दे कुशल कामेयां लेई समर्पित"
+    "footerCopyright": "© २०२६ VOID TRACE RPL AI ASSISTANT — भारत दे कुशल कामेयां लेई समर्पित"
   },
   "mni": {
     "navHome": "ꯌꯨꯝ",
@@ -3305,7 +3305,7 @@ export const TRANSLATIONS = {
     "navAssessor": "ꯌꯦꯡꯁꯤꯅꯕ",
     "govtInitiative": "ꯚꯥꯔꯠ ꯁꯔꯀꯥꯔꯒꯤ ꯈꯣꯡꯊꯥꯡ",
     "ministryName": "ꯍꯩꯁꯤꯡꯕ ꯆꯥꯎꯈꯠꯍꯟꯕ ꯑꯃꯁꯨꯡ ꯏꯟꯇꯔꯞꯔꯤꯅꯔꯁꯤꯞ ꯃꯟꯠꯔꯥꯂꯌ",
-    "rplAiAssessment": "RPL AI ꯍꯩꯁꯤꯡꯕ ꯌꯦꯡꯁꯤꯅꯕ",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "ꯅꯍꯥꯛꯀꯤ ꯍꯩꯁꯤꯡꯕꯒꯤ ꯁꯔꯀꯥꯔꯤ ꯁꯔꯇꯤꯐꯤꯀꯦꯠ ꯐꯪꯂꯨ",
     "heroSub": "ꯊꯕꯛ ꯇꯧꯗꯨꯅ ꯇꯝꯈ꯭ꯔꯕ ꯁꯤꯟꯃꯤꯁꯤꯡꯒꯤꯗꯃꯛ꯫ ꯑꯈꯟꯅꯕ ꯂꯥꯏꯔꯤꯛ ꯍꯩꯕ ꯃꯊꯧ ꯇꯥꯗꯦ꯫",
     "portfolioHeroH1_1": "ꯍꯩꯁꯤꯡꯕ ꯌꯦꯡꯁꯤꯜꯂꯨ꯫",
@@ -3456,7 +3456,7 @@ export const TRANSLATIONS = {
     "problemId": "ꯋꯥꯐꯝ ID: SIH26242",
     "themeSmartEdu": "ꯊꯤꯝ: ꯁ꯭ꯃꯥꯔꯠ ꯂꯥꯏꯔꯤꯛ ꯇꯝꯕ",
     "categorySoftware": "ꯃꯈꯜ: ꯁꯣꯐ꯭ꯇꯋꯦꯌꯥꯔ",
-    "footerCopyright": "© ꯲꯰꯲꯶ RPL AI ꯌꯦꯡꯁꯤꯟꯕ ꯈꯨꯠꯂꯥꯏ — ꯏꯟꯗꯤꯌꯥꯒꯤ ꯍꯩꯊꯣꯏꯕ ꯁꯤꯟꯃꯤꯁꯤꯡꯒꯤꯗꯃꯛ ꯁꯦꯝꯕ"
+    "footerCopyright": "© ꯲꯰꯲꯶ VOID TRACE RPL AI ASSISTANT — ꯏꯟꯗꯤꯌꯥꯒꯤ ꯍꯩꯊꯣꯏꯕ ꯁꯤꯟꯃꯤꯁꯤꯡꯒꯤꯗꯃꯛ ꯁꯦꯝꯕ"
   },
   "brx": {
     "navHome": "न’खर",
@@ -3465,7 +3465,7 @@ export const TRANSLATIONS = {
     "navAssessor": "आनजादगिरि",
     "govtInitiative": "भारत सरकारनि थांखि",
     "ministryName": "रंसार जौगाथाय आरो फालांगि मन्थ्रिह’लार",
-    "rplAiAssessment": "RPL AI रंसार आनजाद",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "नोंथांनि रोंगोथिनि सरकारी फोरमान बिलाइ ला",
     "heroSub": "हाबायाव सोलोंनाय खामानि मावग्राफोरनि थाखाय। कोनो फरायसालि फरायनो गोनांथि गैया।",
     "portfolioHeroH1_1": "रोंगोथि आनजाद।",
@@ -3616,7 +3616,7 @@ export const TRANSLATIONS = {
     "problemId": "जेंना सिनायथि: SIH26242",
     "themeSmartEdu": "थीम: स्मार्ट सोलोंथाय",
     "categorySoftware": "थाखो: सफ्टवेर",
-    "footerCopyright": "© २०२६ RPL AI आनजाद आयदा — भारतनि रोंगौ मावफारिफोरनि थाखाय"
+    "footerCopyright": "© २०२६ VOID TRACE RPL AI ASSISTANT — भारतनि रोंगौ मावफारिफोरनि थाखाय"
   },
   "sa": {
     "navHome": "गृहम्",
@@ -3625,7 +3625,7 @@ export const TRANSLATIONS = {
     "navAssessor": "परीक्षकः",
     "govtInitiative": "भारतसर्वकारस्य उपक्रमः",
     "ministryName": "कौशलविकास-उद्यमितामन्त्रालयः",
-    "rplAiAssessment": "आरपीएल एआई कौशलमूल्याङ्कनम्",
+    "rplAiAssessment": "VOID TRACE RPL AI ASSISTANT",
     "heroTitle": "स्वकीयकौशलस्य प्रमाणीकरणं प्राप्नुवन्तु",
     "heroSub": "कर्मणा शिक्षितश्रमिकेभ्यः। औपचारिकशिक्षायाः आवश्यकता नास्ति।",
     "portfolioHeroH1_1": "कौशलं परीक्ष्यताम्।",
@@ -3776,7 +3776,7 @@ export const TRANSLATIONS = {
     "problemId": "समस्या संङ्ख्या: SIH26242",
     "themeSmartEdu": "विषयः: स्मार्ट-शिक्षा",
     "categorySoftware": "वर्गः: तन्त्रांशः (Software)",
-    "footerCopyright": "© २०२६ RPL AI मूल्याङ्कनयन्त्रम् — भारतस्य कुशलकर्मकरेभ्यः समर्पितम्"
+    "footerCopyright": "© २०२६ VOID TRACE RPL AI ASSISTANT — भारतस्य कुशलकर्मकरेभ्यः समर्पितम्"
   }
 };
 

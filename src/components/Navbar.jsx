@@ -66,6 +66,8 @@ export default function Navbar() {
   }
 
   const textColorClass = isPortfolio && !isHome && !isAssessor ? 'text-charcoal' : 'text-white';
+  const subtitleAccentClass = isPortfolio ? (!isHome && !isAssessor ? 'text-[#3047E8]' : 'text-accent') : 'text-teal-light';
+  const badgeBgClass = isPortfolio && !isHome && !isAssessor ? 'bg-charcoal/10 text-charcoal border-charcoal/20' : 'bg-white/10 text-white/80 border-white/10';
   const selectBgClass = isPortfolio && !isHome && !isAssessor ? 'bg-charcoal/5 border-charcoal/20 focus:border-charcoal/50' : 'bg-white/15 border-white/20 focus:border-white/50';
 
   return (
@@ -77,24 +79,55 @@ export default function Navbar() {
         {/* Top accent stripe */}
         {!isPortfolio && <div className="h-1 bg-teal w-full transition-colors" />}
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 shrink-0" aria-label="VOID TRACE RPL AI ASSISTANT Home">
             {isPortfolio ? (
-              <div className="flex items-center gap-2">
-                <span className="font-display font-bold tracking-tight text-xl">[<span className="text-accent inline-block mx-[2px] w-2 h-2 rounded-full bg-accent relative -top-0.5" />] RPL AI</span>
-                <span className="font-mono text-[10px] bg-white/10 px-2 py-1 rounded opacity-70">SIH26242</span>
+              <div className="flex items-center gap-2 sm:gap-2.5">
+                <div className="flex flex-col justify-center select-none leading-none">
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <span className="font-display font-black tracking-tight text-sm sm:text-base md:text-lg lg:text-xl flex items-center shrink-0">
+                      [<span className="text-accent inline-block mx-[2px] w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent relative -top-0.5" />]
+                      <span className="ml-1 tracking-tight">VOID TRACE</span>
+                    </span>
+                    <span className="hidden sm:inline-block font-mono text-xs opacity-40">/</span>
+                    <span className={`hidden sm:inline-block font-mono text-xs md:text-xs lg:text-sm font-bold tracking-wider uppercase whitespace-nowrap ${subtitleAccentClass}`}>
+                      RPL AI ASSISTANT
+                    </span>
+                    <span className={`hidden xl:inline-block font-mono text-[10px] px-2 py-0.5 rounded border ml-1 ${badgeBgClass}`}>
+                      SIH26242
+                    </span>
+                  </div>
+                  {/* On Mobile (< 640px) */}
+                  <div className={`sm:hidden font-mono text-[8.5px] font-bold tracking-widest uppercase mt-1 pl-3.5 ${subtitleAccentClass}`}>
+                    RPL AI ASSISTANT
+                  </div>
+                </div>
               </div>
             ) : (
-              <>
-                <div className="w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center text-sm font-bold border border-white/20">
-                  RPL
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/15 flex items-center justify-center text-xs sm:text-sm font-bold border border-white/20 shrink-0 text-white shadow-sm">
+                  VT
                 </div>
-                <div className="hidden sm:block leading-tight">
-                  <div className="text-sm font-semibold tracking-tight">{t('rplAiAssessment')}</div>
-                  <div className="text-[11px] opacity-60">{t('ministryName')}</div>
+                <div className="flex flex-col justify-center leading-tight select-none">
+                  {/* Desktop / Tablet view */}
+                  <div className="hidden sm:block">
+                    <div className="text-sm font-bold tracking-tight text-white whitespace-nowrap">
+                      VOID TRACE RPL AI ASSISTANT
+                    </div>
+                    <div className="text-[11px] opacity-70 text-white/80">{t('ministryName')}</div>
+                  </div>
+                  {/* Mobile view (< 640px) */}
+                  <div className="sm:hidden leading-none">
+                    <div className="text-xs font-bold tracking-tight text-white whitespace-nowrap">
+                      VOID TRACE
+                    </div>
+                    <div className="text-[9px] font-semibold text-teal-light tracking-wide uppercase mt-1 whitespace-nowrap">
+                      RPL AI ASSISTANT
+                    </div>
+                  </div>
                 </div>
-              </>
+              </div>
             )}
           </Link>
 
@@ -115,12 +148,12 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2 ml-auto md:ml-4">
+          <div className="flex items-center gap-1.5 sm:gap-2 ml-auto md:ml-4 shrink-0">
             {/* When banner is dismissed, show compact inline restore chip in navbar controls */}
             {bannerDismissed && (
               <button
                 onClick={handleRestoreBanner}
-                className={`inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-1.5 rounded-lg text-[10px] font-mono font-bold tracking-wider transition-all border shrink-0 ${
+                className={`inline-flex items-center gap-1 px-1.5 sm:px-2.5 py-1 sm:py-1.5 rounded-lg text-[9px] sm:text-[10px] font-mono font-bold tracking-wider transition-all border shrink-0 ${
                   isPortfolio
                     ? 'bg-[#F5C518] text-[#0A0B12] border-[#0A0B12]/20 hover:bg-[#ffe47a]'
                     : 'bg-[#0B1528] text-teal-light border-teal/40 hover:bg-navy'
@@ -131,20 +164,20 @@ export default function Navbar() {
                 <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
                 <span className="hidden sm:inline">DEMO MODE</span>
                 <span className="sm:hidden">DEMO</span>
-                <ChevronDown size={12} />
+                <ChevronDown size={11} />
               </button>
             )}
 
             <select
               value={lang}
               onChange={(e) => changeLang(e.target.value)}
-              className={`${selectBgClass} ${textColorClass} text-xs font-mono rounded-lg px-2 py-1.5 outline-none border cursor-pointer appearance-none`}
+              className={`${selectBgClass} ${textColorClass} text-[11px] sm:text-xs font-mono rounded-lg px-1.5 sm:px-2 py-1 sm:py-1.5 outline-none border cursor-pointer appearance-none shrink-0`}
               style={{
                 backgroundImage: `url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23${isPortfolio && !isHome && !isAssessor ? '1A1A1A' : 'FFFFFF'}%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E")`,
                 backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'right 0.5rem top 50%',
-                backgroundSize: '0.65rem auto',
-                paddingRight: '1.75rem'
+                backgroundPosition: 'right 0.35rem top 50%',
+                backgroundSize: '0.55rem auto',
+                paddingRight: '1.35rem'
               }}
             >
               {LANGS.map(l => (
@@ -157,17 +190,18 @@ export default function Navbar() {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className={`${isPortfolio && !isHome && !isAssessor ? 'bg-charcoal/5 hover:bg-charcoal/10 border-charcoal/20' : 'bg-white/10 hover:bg-white/20 border-white/20'} ${textColorClass} text-[10px] font-mono tracking-widest rounded-lg px-2.5 sm:px-3 py-1.5 border transition-colors inline-flex items-center gap-1.5 whitespace-nowrap`}
+              className={`${isPortfolio && !isHome && !isAssessor ? 'bg-charcoal/5 hover:bg-charcoal/10 border-charcoal/20' : 'bg-white/10 hover:bg-white/20 border-white/20'} ${textColorClass} text-[10px] font-mono tracking-widest rounded-lg px-2 sm:px-3 py-1 sm:py-1.5 border transition-colors inline-flex items-center gap-1.5 whitespace-nowrap shrink-0`}
               title="Toggle Theme: Theme 1 (Portfolio) / Theme 2 (Government)"
               aria-label="Toggle Theme"
             >
               <span className={`w-1.5 h-1.5 rounded-full ${isPortfolio ? 'bg-accent' : 'bg-emerald-400'}`}></span>
-              {isPortfolio ? 'THEME 1' : 'THEME 2'}
+              <span className="hidden sm:inline">{isPortfolio ? 'THEME 1' : 'THEME 2'}</span>
+              <span className="sm:hidden">{isPortfolio ? 'T1' : 'T2'}</span>
             </button>
 
             {/* Mobile toggle */}
-            <button className={`md:hidden p-2 -mr-2 rounded-lg ${textColorClass}`} onClick={() => setOpen(!open)} aria-label="Menu">
-              {open ? <X size={24} /> : <Menu size={24} />}
+            <button className={`md:hidden p-1.5 sm:p-2 -mr-1 rounded-lg ${textColorClass} shrink-0`} onClick={() => setOpen(!open)} aria-label="Menu">
+              {open ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
@@ -181,9 +215,18 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className={`fixed inset-0 z-40 ${isPortfolio ? 'bg-charcoal text-white' : 'bg-navy text-white'} pt-32 pb-12 px-6 md:hidden overflow-y-auto`}
+            className={`fixed inset-0 z-40 ${isPortfolio ? 'bg-charcoal text-white' : 'bg-navy text-white'} pt-36 pb-12 px-6 md:hidden overflow-y-auto`}
           >
-            <nav className="flex flex-col gap-4">
+            <nav className="flex flex-col gap-3">
+              <div className="px-5 mb-2 pb-3 border-b border-white/10 flex items-center justify-between">
+                <div>
+                  <div className="font-display font-bold text-base text-white tracking-tight">VOID TRACE</div>
+                  <div className="text-[10px] font-mono text-accent font-semibold tracking-wider uppercase">RPL AI ASSISTANT</div>
+                </div>
+                <span className="font-mono text-[10px] bg-white/10 px-2 py-0.5 rounded text-white/70 border border-white/10">
+                  SIH26242
+                </span>
+              </div>
               {links.map((l) => (
                 <Link
                   key={l.to}
