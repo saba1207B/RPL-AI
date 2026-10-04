@@ -216,6 +216,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
             className={`fixed inset-0 z-40 ${isPortfolio ? 'bg-charcoal text-white' : 'bg-navy text-white'} pt-36 pb-12 px-6 md:hidden overflow-y-auto`}
+            data-lenis-prevent
           >
             <nav className="flex flex-col gap-3">
               <div className="px-5 mb-2 pb-3 border-b border-white/10 flex items-center justify-between">

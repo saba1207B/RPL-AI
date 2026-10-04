@@ -6,6 +6,7 @@ import CandidateDashboard from './pages/CandidateDashboard';
 import AssessorDashboard from './pages/AssessorDashboard';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import SmoothScroll from './components/SmoothScroll';
 
 function App() {
   const location = useLocation();
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SmoothScroll />
       <Navbar />
       <main className="flex-grow">
         <AnimatePresence mode="wait">
