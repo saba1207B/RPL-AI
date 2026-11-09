@@ -1,3 +1,15 @@
+/*
+Copyright (c) 2026 Sabareesh M (saba1207B). All Rights Reserved.
+
+This source code is proprietary and confidential.
+
+Unauthorized copying, redistribution, modification, or use — including
+any use for artificial intelligence / machine learning training —
+is strictly prohibited.
+
+See the LICENSE and COPYRIGHT files in the repository root for full terms.
+*/
+
 import fs from 'fs';
 import { hi, mr, gu, pa } from './lang_data/hi_mr_gu_pa.js';
 import { ta, te, kn, ml } from './lang_data/ta_te_kn_ml.js';
